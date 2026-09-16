@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>澳門房地產經紀技能測試溫習室</title>
+  <meta name="description" content="由基礎法律教材逐章學習、按主題題庫驗證掌握度，再完成50題、45分鐘正式規格模擬測驗。">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1f3a'/%3E%3Cpath d='M17 48V24l15-10 15 10v24H17Z' fill='none' stroke='%23ff6b4a' stroke-width='5' stroke-linejoin='round'/%3E%3Cpath d='M26 48V34h12v14' fill='none' stroke='white' stroke-width='5'/%3E%3C/svg%3E">
+  <style>
+    :root{--ink:#0b1f3a;--muted:#637083;--paper:#f4f7fb;--white:#fff;--accent:#f05a3c;--accent2:#16697a;--line:#dce3ec;--good:#147d64;--bad:#bd3d35;--shadow:0 14px 40px rgba(11,31,58,.09)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,-apple-system,"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif}button,input{font:inherit}button{cursor:pointer}
+    .topbar{position:sticky;top:0;z-index:20;background:rgba(11,31,58,.96);color:#fff;border-bottom:1px solid rgba(255,255,255,.12)}.top-inner{max-width:1160px;margin:auto;padding:12px 22px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:10px;font-weight:800}.mark{display:grid;place-items:center;width:34px;height:34px;border:2px solid var(--accent);border-radius:10px;color:var(--accent)}
+    .nav{display:flex;gap:6px}.nav button{border:0;background:transparent;color:#cbd5e2;border-radius:10px;padding:9px 13px;font-weight:700}.nav button.active,.nav button:hover{background:#fff;color:var(--ink)}
+    main{max-width:1160px;margin:auto;padding:34px 22px 70px}.view{display:none}.view.active{display:block}.eyebrow{margin:0 0 8px;color:var(--accent);font-weight:850;letter-spacing:.08em}.intro{display:grid;grid-template-columns:1.5fr .8fr;gap:24px;align-items:stretch;margin-bottom:24px}.intro-copy,.exam-card,.module,.quiz-shell,.result-card{background:var(--white);border:1px solid var(--line);border-radius:22px;box-shadow:var(--shadow)}.intro-copy{padding:30px}.intro h1{font-size:clamp(2rem,5vw,3.6rem);line-height:1.06;letter-spacing:-.04em;margin:0 0 18px;max-width:15ch}.lead{font-size:1.08rem;color:#3d4c61;max-width:64ch}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:24px}.stat{background:#eef3f8;border-radius:14px;padding:14px}.stat b{display:block;font-size:1.5rem}.stat span{color:var(--muted);font-size:.9rem}.exam-card{background:var(--ink);color:#fff;padding:28px;display:flex;flex-direction:column;justify-content:space-between}.exam-card p{color:#cbd5e2}.exam-card .rule{border-top:1px solid rgba(255,255,255,.15);padding:13px 0}.exam-card .rule strong{color:#fff}.primary,.secondary,.danger{border:0;border-radius:12px;padding:12px 18px;font-weight:800}.primary{background:var(--accent);color:#fff}.primary:hover{background:#d94b30}.secondary{background:#e9eef5;color:var(--ink)}.danger{background:#fce9e6;color:var(--bad)}
+    .section-title{margin:36px 0 16px}.section-title h2{font-size:1.7rem;margin:0}.section-title p{margin:4px 0;color:var(--muted)}.modules{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.module{padding:24px}.module-head{display:flex;justify-content:space-between;gap:15px}.num{font-weight:900;color:var(--accent);font-size:1.25rem}.module h3{margin:0 0 10px;font-size:1.25rem}.module ul{padding-left:1.2rem;margin:12px 0}.trap{margin-top:16px;padding:13px 15px;background:#fff4f1;border-left:4px solid var(--accent);border-radius:8px}.trap b{display:block}.source-note{margin-top:22px;padding:18px 20px;border:1px dashed #aeb8c7;border-radius:14px;color:#526075;background:#f9fbfd}
+    .quiz-shell{overflow:hidden}.quiz-head{background:var(--ink);color:#fff;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px}.quiz-meta{display:flex;gap:10px;flex-wrap:wrap}.pill{border:1px solid rgba(255,255,255,.2);border-radius:99px;padding:7px 11px}.timer{font-variant-numeric:tabular-nums;font-weight:900;color:#fff}.timer.warn{color:#ffb4a2}.quiz-layout{display:grid;grid-template-columns:1fr 260px;min-height:560px}.question-panel{padding:30px}.question-kicker{font-size:.92rem;color:var(--accent2);font-weight:800}.question-panel h2{font-size:1.35rem;line-height:1.55;margin:8px 0 22px}.choices{display:grid;gap:11px}.choice{display:flex;gap:12px;align-items:flex-start;text-align:left;width:100%;padding:15px;border:1.5px solid var(--line);border-radius:14px;background:#fff;color:var(--ink)}.choice:hover{border-color:#91a3bb;background:#f8fafc}.choice.selected{border-color:var(--accent2);box-shadow:0 0 0 3px rgba(22,105,122,.1);background:#f1fafb}.letter{display:grid;place-items:center;flex:0 0 30px;height:30px;border-radius:8px;background:#e9eef5;font-weight:900}.choice.selected .letter{background:var(--accent2);color:#fff}.question-actions{display:flex;justify-content:space-between;gap:12px;margin-top:26px}.question-actions>div{display:flex;gap:10px}.side{border-left:1px solid var(--line);background:#f9fbfd;padding:22px}.side h3{margin-top:0}.question-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:7px}.qdot{aspect-ratio:1;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--muted);font-size:.82rem;font-weight:800}.qdot.done{background:#dceff0;color:var(--accent2);border-color:#b4dcdf}.qdot.current{box-shadow:0 0 0 2px var(--accent);color:var(--ink)}.side-note{font-size:.9rem;color:var(--muted);margin:16px 0}.start-screen{padding:34px}.start-screen h1{font-size:2rem;margin:0}.start-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:24px 0}.start-rule{border:1px solid var(--line);padding:18px;border-radius:14px}.start-rule b{display:block;font-size:1.25rem}.result-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:20px}.result-card{padding:28px}.score-ring{width:170px;height:170px;border-radius:50%;display:grid;place-items:center;margin:12px auto 18px;background:conic-gradient(var(--good) 0%,#e7ecf2 0)}.score-ring>div{width:132px;height:132px;border-radius:50%;display:grid;place-items:center;text-align:center;background:#fff}.score-ring strong{display:block;font-size:2rem;line-height:1}.pass{color:var(--good)}.fail{color:var(--bad)}.breakdown{display:grid;gap:10px}.barrow{display:grid;grid-template-columns:130px 1fr 55px;gap:10px;align-items:center}.bar{height:9px;border-radius:99px;background:#e7ecf2;overflow:hidden}.bar i{display:block;height:100%;background:var(--accent2)}.review-list{display:grid;gap:12px;margin-top:20px}.review{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px}.review h4{margin:0 0 10px}.review p{margin:5px 0}.correct{color:var(--good)}.wrong{color:var(--bad)}.hidden{display:none!important}
+    @media(max-width:820px){.intro,.modules,.quiz-layout,.result-wrap{grid-template-columns:1fr}.quiz-layout{min-height:0}.side{border-left:0;border-top:1px solid var(--line)}.question-grid{grid-template-columns:repeat(10,1fr)}.intro h1{max-width:none}.top-inner{padding:10px 14px}.brand span:last-child{display:none}main{padding:24px 14px 50px}.question-panel{padding:22px 18px}.stats{grid-template-columns:1fr}.start-grid{grid-template-columns:1fr}.barrow{grid-template-columns:100px 1fr 45px}}
+    @media(max-width:520px){.question-grid{grid-template-columns:repeat(5,1fr)}.quiz-head{align-items:flex-start;flex-direction:column}.question-actions{flex-direction:column}.question-actions>div{display:grid;grid-template-columns:1fr 1fr}.question-actions .primary{width:100%}.nav button{padding:8px 10px}.module,.intro-copy,.exam-card{padding:20px}}
+    .route-map{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:22px 0}.route-step{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:var(--shadow)}.route-step .step-no{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--ink);color:#fff;font-weight:900}.route-step h3{margin:14px 0 5px}.route-step p{color:var(--muted);margin:0}.route-step button{margin-top:14px;width:100%}
+    .dashboard-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}.dashboard-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px;box-shadow:var(--shadow)}.progress-big{font-size:2.6rem;font-weight:900;line-height:1}.progress-track{height:12px;background:#e7ecf2;border-radius:99px;overflow:hidden;margin:12px 0}.progress-track i{display:block;height:100%;background:linear-gradient(90deg,var(--accent2),var(--accent));width:0}.topic-status{display:grid;gap:9px}.status-row{display:grid;grid-template-columns:1fr auto;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}.status-tag{padding:3px 9px;border-radius:99px;background:#eef3f8;color:var(--muted);font-size:.85rem;font-weight:800}.status-tag.strong{background:#e1f3ed;color:var(--good)}.status-tag.basic{background:#fff3d9;color:#8a6100}.status-tag.weak{background:#fce9e6;color:var(--bad)}
+    .course-layout{display:grid;grid-template-columns:280px 1fr;gap:20px}.course-side{position:sticky;top:78px;align-self:start;max-height:calc(100vh - 100px);overflow:auto;background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px}.course-side button{display:block;width:100%;text-align:left;border:0;background:transparent;border-radius:10px;padding:10px 11px;color:var(--ink)}.course-side button.active{background:var(--ink);color:#fff}.course-side small{display:block;color:inherit;opacity:.68}.lesson-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:30px;box-shadow:var(--shadow)}.lesson-top{display:flex;justify-content:space-between;gap:20px;align-items:start}.lesson-card h1{font-size:clamp(1.8rem,4vw,2.8rem);line-height:1.15;margin:4px 0 10px}.chapter-intro{color:#44536a;font-size:1.05rem}.unit-list{display:grid;gap:14px;margin-top:24px}.unit{border:1px solid var(--line);border-radius:15px;padding:18px}.unit h3{margin:0 0 8px}.unit p{margin:0 0 8px;color:#415067}.unit ul{margin:8px 0 0;padding-left:1.2rem}.unit-check{display:flex;align-items:center;gap:9px;margin-top:12px;color:var(--accent2);font-weight:800}.unit-check input{width:19px;height:19px;accent-color:var(--accent2)}.lesson-nav{display:flex;justify-content:space-between;gap:12px;margin-top:22px}.chapter-progress{min-width:110px;text-align:right;color:var(--muted)}
+    .overview-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.axis-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}.axis-card h3{margin:0 0 8px}.axis-card ul{padding-left:1.2rem;margin:10px 0}.memory-table{width:100%;border-collapse:collapse;background:#fff;border-radius:16px;overflow:hidden}.memory-table th,.memory-table td{text-align:left;vertical-align:top;padding:14px;border-bottom:1px solid var(--line)}.memory-table th{background:var(--ink);color:#fff}.memory-table tr:last-child td{border-bottom:0}
+    .practice-picker{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.practice-topic{background:#fff;border:1px solid var(--line);border-radius:17px;padding:20px}.practice-topic h3{margin:0 0 5px}.practice-topic p{color:var(--muted);min-height:52px}.practice-topic button{width:100%}.practice-stage{background:#fff;border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:var(--shadow)}.instant-feedback{margin-top:14px;padding:14px;border-radius:12px}.instant-feedback.ok{background:#e1f3ed;color:var(--good)}.instant-feedback.no{background:#fce9e6;color:var(--bad)}.mastery-box{display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}.mastery-score{font-size:2.4rem;font-weight:900;color:var(--accent2)}
+    .notice{padding:15px 17px;border-radius:13px;background:#fff8e8;border:1px solid #f0d89f;color:#624b16;margin:16px 0}.compact-actions{display:flex;gap:10px;flex-wrap:wrap}.searchbox{width:100%;border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin-bottom:12px}
+    .reader-layout{display:grid;grid-template-columns:290px 1fr;gap:20px}.reader-side{position:sticky;top:78px;align-self:start;max-height:calc(100vh - 100px);overflow:auto;background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px}.reader-side button{display:block;width:100%;text-align:left;border:0;background:transparent;border-radius:10px;padding:10px 11px;color:var(--ink)}.reader-side button.active{background:var(--ink);color:#fff}.toc-links{border-top:1px solid var(--line);margin-top:12px;padding-top:12px}.toc-links a{display:block;color:#526075;text-decoration:none;padding:5px 7px;font-size:.9rem}.toc-links a:hover{color:var(--accent2);background:#eef5f7;border-radius:7px}.original-article{background:#fff;border:1px solid var(--line);border-radius:22px;padding:34px;box-shadow:var(--shadow)}.original-article h1{font-size:clamp(1.9rem,4vw,2.8rem);line-height:1.15;margin:5px 0 10px}.reader-tools{display:flex;gap:10px;align-items:center;margin:20px 0}.reader-tools .searchbox{margin:0}.original-text{font-family:"Noto Serif TC","Songti TC","PMingLiU",serif;font-size:1.05rem;line-height:1.9;color:#24364d}.original-text h2{font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif;font-size:1.35rem;line-height:1.4;margin:32px 0 12px;padding:12px 15px;background:#eef3f8;border-left:5px solid var(--accent2);border-radius:8px}.original-text p{margin:0 0 1.15em}.original-text mark{background:#ffe69b;padding:0 .08em}.reader-source{font-size:.92rem;color:var(--muted);border-top:1px solid var(--line);margin-top:28px;padding-top:16px}
+    @media(max-width:900px){.route-map{grid-template-columns:repeat(2,1fr)}.dashboard-grid,.course-layout,.reader-layout{grid-template-columns:1fr}.course-side,.reader-side{position:static;max-height:none}.course-side{display:grid;grid-template-columns:repeat(2,1fr)}.overview-grid{grid-template-columns:1fr}.practice-picker{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:560px){.route-map,.practice-picker{grid-template-columns:1fr}.course-side{grid-template-columns:1fr}.lesson-card{padding:20px}.lesson-top{display:block}.chapter-progress{text-align:left;margin-top:8px}.memory-table{display:block;overflow-x:auto}.nav{overflow-x:auto;max-width:72vw}.nav button{white-space:nowrap}}
+  </style>
+</head>
+<body>
+  <header class="topbar"><div class="top-inner"><div class="brand"><span class="mark">屋</span><span>房地產經紀技能測試溫習室</span></div><nav class="nav" aria-label="主選單"><button class="active" data-view="study">學習路線</button><button data-view="course">簡易教材</button><button data-view="original">教材原文</button><button data-view="overview">全科總覽</button><button data-view="practice">主題測驗</button><button data-view="quiz">正式模擬</button></nav></div></header>
+  <main>
+    <section id="study" class="view active">
+      <div class="intro"><div class="intro-copy"><p class="eyebrow">由教材到合格測驗</p><h1>先逐章學懂，再用題庫驗證。</h1><p class="lead">完整學習流程依照教材次序：法律主體 → 不動產 → 物業管理 → 買賣租賃 → 稅、公證及登記 → 中介業務法 → 非法旅館。完成單元後做主題測驗，最後才做正式規格模擬試。</p><div class="stats"><div class="stat"><b id="lessonDone">0</b><span>已完成學習單元</span></div><div class="stat"><b id="topicDone">0 / 7</b><span>已測驗主題</span></div><div class="stat"><b id="bestMock">—</b><span>正式模擬最佳成績</span></div></div></div><aside class="exam-card"><div><p class="eyebrow">你的學習進度</p><div class="progress-big" id="overallPercent">0%</div><div class="progress-track"><i id="overallBar"></i></div><p id="nextAdvice">由第一章開始，逐節完成。</p></div><button class="primary" data-go="course">繼續簡易教材</button></aside></div>
+      <div class="route-map"><article class="route-step"><span class="step-no">1</span><h3>教材閱讀</h3><p>先看簡易解釋，需要細節時逐章閱讀教材原文。</p><button class="secondary" data-go="course">開始學習</button></article><article class="route-step"><span class="step-no">2</span><h3>全科總覽</h3><p>把分散規則整理成主軸、對照及答題框架。</p><button class="secondary" data-go="overview">查看總覽</button></article><article class="route-step"><span class="step-no">3</span><h3>主題測驗</h3><p>按七類官方題庫測試，判斷每科掌握程度。</p><button class="secondary" data-go="practice">開始練習</button></article><article class="route-step"><span class="step-no">4</span><h3>正式模擬</h3><p>50 題、45 分鐘；答對 30 題或以上合格。</p><button class="secondary" data-go="quiz">進入模擬</button></article></div>
+      <div class="dashboard-grid"><article class="dashboard-card"><h2>各主題掌握度</h2><div id="dashboardTopics" class="topic-status"></div></article><article class="dashboard-card"><h2>使用方法</h2><ol><li>每讀完一個單元，勾選「已完成」。</li><li>完成一章後，到主題測驗做對應題目。</li><li>80% 或以上表示掌握良好；60% 至 79% 屬基本掌握；低於 60% 建議重讀。</li><li>七個主題完成後，再做正式模擬。</li></ol><div class="notice">學習紀錄只保存在你目前使用的裝置及瀏覽器。</div></article></div>
+      <div class="source-note"><strong>資料基準：</strong>《澳門房地產經紀技能的基本法律知識》及《房地產經紀技能測試題庫》。教材及題庫屬 2020／2021 年版本，頁面會忠實反映附件內容；涉及法規、稅率、部門名稱及程序時，正式實務仍須核對最新公布。</div>
+    </section>
+
+    <section id="course" class="view"><div class="section-title"><h2>簡易教材｜先理解每個概念</h2><p>每章包含教材目錄內全部主題，以簡單語言解釋；需要完整細節時可切換到「教材原文」。</p></div><div class="course-layout"><aside class="course-side"><input id="courseSearch" class="searchbox" type="search" placeholder="搜尋章節或關鍵字" aria-label="搜尋簡易教材"><div id="courseNav"></div></aside><div id="lessonPanel"></div></div></section>
+
+    <section id="original" class="view"><div class="section-title"><h2>教材原文｜逐章完整閱讀</h2><p>保留附件教材由第一章至附錄的完整文字，包括法律概念、條文說明、例子、程序及列舉事項。</p></div><div class="notice"><strong>閱讀方式：</strong>先用簡易教材掌握概念，再到本頁閱讀原文細節。以下文字取自附件《澳門房地產經紀技能的基本法律知識》，只整理換行及移除頁碼，沒有改寫內容。</div><div class="reader-layout"><aside class="reader-side"><input id="originalSearch" class="searchbox" type="search" placeholder="在本章搜尋關鍵字" aria-label="搜尋教材原文"><div id="originalChapterNav"></div><div id="originalToc" class="toc-links"></div></aside><article id="originalArticle" class="original-article"></article></div></section>
+
+    <section id="overview" class="view"><div class="section-title"><h2>全科溫習主軸</h2><p>先看整個交易流程，再記清楚人、物、合同、登記、稅務與責任。</p></div><div class="overview-grid"><article class="axis-card"><h3>一、誰有權作出交易？</h3><ul><li>自然人／法人有否權利能力及行為能力。</li><li>未成年人、禁治產及準禁治產由誰代理或輔助。</li><li>夫妻財產制、家庭居所及共有狀況會否限制處分。</li><li>代理人有否足夠及仍然有效的授權。</li></ul></article><article class="axis-card"><h3>二、交易的是甚麼權利？</h3><ul><li>是土地、獨立單位、共有份額、承批人地位，還是樓花合同地位。</li><li>分清獨立部分與共同部分；共同部分一般不可單獨出售。</li><li>查清抵押、查封、負擔、優先權及不可轉讓限制。</li></ul></article><article class="axis-card"><h3>三、用甚麼合同與形式？</h3><ul><li>預約買賣、正式買賣、租賃、中介合同各有不同形式。</li><li>分清定金、違約、特定執行、合同地位讓與及授權。</li><li>樓花交易要核對預先許可、登記及付款程序。</li></ul></article><article class="axis-card"><h3>四、交易後要完成甚麼？</h3><ul><li>公證處理文書與簽名；物業登記公示物權狀況。</li><li>辨認房屋稅、印花稅、移轉印花稅及經營相關稅務。</li><li>中介須保存合同與識別資料，履行披露、保密及合作義務。</li></ul></article></div>
+      <div class="section-title"><h2>七科重點一覽</h2><p>答題時先辨認題目屬於哪一科，再找「原則、例外、期限、形式、主管部門」。</p></div><table class="memory-table"><thead><tr><th>題庫分類</th><th>主要內容</th><th>最常見混淆</th></tr></thead><tbody><tr><td>主體</td><td>能力、夫妻財產制、法人、公司、代理</td><td>登記業主不一定可單獨處分；家庭居所有額外限制</td></tr><tr><td>買賣租賃</td><td>租約、預約買賣、共有、優先權、樓花</td><td>私文書與公證書；解除、終止與廢止</td></tr><tr><td>登記、公證、稅務</td><td>查屋紙、公證形式、稅種、申報與清洗黑錢</td><td>公證不等同登記；不同稅項由不同事實觸發</td></tr><tr><td>不動產</td><td>土地、批給、分層建築物、改善費用</td><td>土地所有權與承批人權利；共同與獨立部分</td></tr><tr><td>中介業務法</td><td>准照、中介合同、佣金、義務、監察與處罰</td><td>中介人與經紀角色；何時才有權收佣</td></tr><tr><td>物業管理</td><td>所有人大會、管理機關、共同負擔及工程</td><td>管理機關不等同管理公司；無效與可撤銷決議</td></tr><tr><td>經濟房屋法</td><td>用途、申請、資產收入、不可轉讓及出售</td><td>自住要求、不可轉讓期及解除負擔後的限制</td></tr></tbody></table>
+      <div class="notice"><strong>非法旅館：</strong>教材有獨立一章，但附件題庫的單項選擇題分類沒有獨立「非法旅館」部分；因此完整教材保留該章，主題測驗則按題庫七個分類進行。</div>
+    </section>
+
+    <section id="practice" class="view"><div class="section-title"><h2>主題測驗｜學完即檢查</h2><p>每次抽取該主題現有題目；完成後按答對率判斷掌握程度。</p></div><div id="practiceHome"><div class="practice-picker" id="practicePicker"></div></div><div id="practiceStage" class="hidden"></div></section>
+
+    <section id="quiz" class="view">
+      <div class="quiz-shell" id="startScreen"><div class="start-screen"><p class="eyebrow">50 題模擬測驗</p><h1>準備好就開始倒數。</h1><p>題目選自附件題庫七個分類；交卷後會顯示總分、各類答對率及錯題。</p><div class="start-grid"><div class="start-rule"><b>50 題</b>每題只有一個正確答案</div><div class="start-rule"><b>45:00</b>時間到自動交卷</div><div class="start-rule"><b>60 分</b>答對 30 題合格</div></div><button class="primary" id="startBtn">開始測驗</button></div></div>
+      <div class="quiz-shell hidden" id="examScreen"><div class="quiz-head"><div class="quiz-meta"><span class="pill" id="progressText">第 1 / 50 題</span><span class="pill" id="answeredText">已答 0 題</span></div><span class="timer" id="timer" aria-live="polite">45:00</span></div><div class="quiz-layout"><div class="question-panel"><div class="question-kicker" id="questionKicker"></div><h2 id="questionText"></h2><div class="choices" id="choices"></div><div class="question-actions"><button class="secondary" id="prevBtn">上一題</button><div><button class="secondary" id="nextBtn">下一題</button><button class="primary" id="submitBtn">交卷</button></div></div></div><aside class="side"><h3>答題卡</h3><div class="question-grid" id="questionGrid"></div><p class="side-note">已選答案會以藍色顯示。交卷前可自由返回修改。</p><button class="danger" id="clearBtn">清除本題答案</button></aside></div></div>
+      <div class="hidden" id="resultScreen"></div>
+    </section>
+  </main>
+  <script src="original-text.js"></script>
+  <script>
+  const COURSE = [
+    {title:'第一章　主體',intro:'先判斷「誰」可以成為權利義務的承擔者，以及他能否親自、透過代理人或在他人協助下作出交易。',cat:'主體',units:[
+      {t:'1. 法律人格和權利能力',d:'自然人或依法成立的法人可以成為權利主體。自然人完全出生且有生命時取得人格，死亡時人格終止。',p:['權利能力：可以享有權利及承擔義務。','沒有權利能力的行為可能無效；沒有行為能力所作行為通常涉及可撤銷問題。']},
+      {t:'2. 行為能力',d:'行為能力是自行或透過意定代理行使權利、承擔義務及處分財產的能力。成年人原則上有完全行為能力。',p:['做題先分清「有沒有權利」與「能不能自己有效作出行為」。','未滿 18 歲原則上是未成年人。']},
+      {t:'2.1 未成年人的無行為能力',d:'未成年人原則上由具親權的父母或監護人代理；部分重大財產行為仍可能要法院許可。',p:['年滿 16 歲者對工作所得財產的管理或處分屬教材所述例外之一。','未成年人結婚涉及親權解除與行為能力變化。']},
+      {t:'2.2 禁治產人的無行為能力',d:'因精神失常、聾啞或失明而顯示無能力處理人身及財產事務者，可經法院宣告禁治產。',p:['禁治產不是單憑醫學診斷自動成立，要依法律程序宣告。','其法律行為一般由監護制度處理。']},
+      {t:'2.3 準禁治產人的無行為能力',d:'因慣性揮霍、濫用酒精或麻醉品等，不能適當處理財產者，可被宣告準禁治產。',p:['準禁治產人不是完全由他人取代，而是在法律指定行為上由保佐人輔助。']},
+      {t:'2.4 偶然無行為能力',d:'即使平日有行為能力，如作出行為時因精神或其他原因不能理解或自由決定，而對方知道或應知，行為可能受爭議。',p:['判斷重點是行為當時的狀態，以及另一方是否知道或應該知道。']},
+      {t:'2.5 夫妻財產處分和管理上的限制',d:'教材介紹取得財產分享制、取得共同財產制、一般共同財產制及分別財產制。',p:['先看採用哪種財產制，再看財產在婚前或婚後取得。','即使屬一方個人財產，涉及家庭居所時仍可能要另一方同意。','登記只寫一人姓名，不代表一定可單獨作出所有處分。']},
+      {t:'3–4. 失蹤與推定死亡',d:'一個人下落不明時，法律先處理財產管理；符合期間及條件後，才可能宣告推定死亡。',p:['失蹤不等於權利能力立即終止。','推定死亡須經法院程序，並影響繼承及財產處理。']},
+      {t:'5. 法人及公司',d:'法人按法律成立後有法律人格；公司是常見法人，可取得、出租或出售物業。',p:['核對公司是否仍存續、誰是行政管理機關成員，以及其代表權範圍。','公司章程、決議及商業登記證明各自證明不同事情。']},
+      {t:'6. 代理',d:'代理人以被代理人名義作出的行為，在權限範圍內直接對被代理人產生效果。',p:['檢查授權書的形式、權力範圍、有效期及有否被廢止。','不動產交易、雙方代理及「大授權」有較高風險，不能只看代理人聲稱。']}
+    ]},
+    {title:'第二章　不動產',intro:'認清交易標的是甚麼、土地屬何種性質，以及土地批給和分層建築物的基本結構。',cat:'不動產',units:[
+      {t:'1. 物與不動產',d:'教材把物分為動產及不動產；農用及都市房地產、水、附於土地上的樹木與天然孳息，以及房地產的附著部分可屬不動產。',p:['房屋、土地與其附著部分通常不能任意分開處理。','交通工具即使價值高，也不因價值而成為不動產。']},
+      {t:'1.3 添附與改善',d:'對物作保存或改善所支出的費用屬改善費用，教材分為必要、有益及奢侈改善費用。',p:['必要改善避免物失去、毀滅或損壞。','有益改善提高物的價值；奢侈改善主要供享受或裝飾。']},
+      {t:'1.4 經濟房屋與社會房屋',d:'兩者同屬公共房屋政策工具，但取得、使用、轉讓及管理制度不同。',p:['題目如涉及經屋，要另外核對經濟房屋法的自住和轉讓限制。']},
+      {t:'2.1 土地的三種法律位置',d:'教材區分公產、私產（可處置土地）及其他由澳門特區享有的財產。',p:['公產服務公共用途，不能像一般私人土地自由買賣。','可處置土地才可依法透過出售、批給或准照佔用等方式處置。']},
+      {t:'2.2 保留地',d:'保留地是為特定公共目的保留的土地；其用途及處理受土地法限制。',p:['遇到保留地題目，不要套用一般可處置土地的自由處置邏輯。']},
+      {t:'2.3–2.5 可處置土地及處置方式',d:'可處置土地可按法律作出售、租賃批給、設定用益權或准照佔用；不同用途、面積及申請人有不同條件。',p:['題庫常考農用與都市性土地的期限、面積及是否須公開招標。','豁免公開招標必須有法律依據，不是行政機關任意決定。']},
+      {t:'2.6 劃界',d:'劃界用於確定批給或佔用土地的界線、位置和面積，是土地程序的重要技術步驟。',p:['圖則、地籍資料與現場界線應互相對照。']},
+      {t:'2.7 承批人的權利與義務',d:'承批人取得的是批給所衍生的權利，不等於取得澳門特區的土地所有權。',p:['須按合同及核准計劃利用土地、繳付地租或溢價金並遵守期限。','轉讓承批人地位或修改用途通常要依法批准。']},
+      {t:'2.8 批給及佔用程序',d:'土地程序涉及申請、卷宗、意見、公開招標或豁免、合同與登記等步驟。',p:['程序由有權限部門處理，最終權限要按土地法及授權判斷。']},
+      {t:'2.9 程序當事人替換或批給轉移',d:'替換申請人或移轉批給所衍生狀況，須符合條件及獲批准。',p:['欠繳款項、不按計劃施工或不遵守利用期，可能導致不獲許可。']},
+      {t:'2.10 程序和批出的終止',d:'程序可因放棄、駁回等原因終止；批給亦可因期限屆滿、失效、解除或贖回等原因終止。',p:['臨時批給是否轉為確定批給，關鍵在土地利用是否依法獲證明。']},
+      {t:'2.11–2.12 地籍、登記、執行機關與違法',d:'地籍描述土地技術資料，物業登記公示權利狀況；違反土地法可有行政、合同或其他法律後果。',p:['部分批給、續期、修改及權利移轉須登記。','地籍資料不等於物業登記上的權利證明。']},
+      {t:'3. 分層建築物',d:'分層建築物由可獨立使用的獨立單位和供共同使用的共同部分組成。',p:['獨立單位可單獨成為交易標的。','結構、外牆、天台、樓梯及共同設施等通常屬共同部分，不能脫離獨立單位單獨出售。']}
+    ]},
+    {title:'第三章　物業管理',intro:'理解誰負責決定、誰負責執行、管理公司是甚麼角色，以及共同負擔與工程如何處理。',cat:'物業管理',units:[
+      {t:'1–2. 概述、法例與管理制度',d:'分層建築物管理包括共同部分的使用、收益、安全、保存及改良。教材區分簡單管理與綜合管理。',p:['綜合管理適用於有多個子部分的複雜建築群，各子部分及整體可有不同機關。']},
+      {t:'2.3–2.4 管理機關與所有人大會',d:'所有人大會是決議機關；管理機關是執行機關。',p:['大會決定預算、規章、選任或罷免管理機關等事項。','管理機關執行決議、收取收入、支付開支及管理共同部分。']},
+      {t:'3.1 所有人大會召集',d:'召集須由有權限人士作出，並按法律通知時間、地點、議程及文件。',p:['召集程序不當可影響決議效力。','首次大會、定期大會及特別大會的觸發情況不同。']},
+      {t:'3.2 大會運作',d:'開會要核對出席、代理、法定人數、票數及會議錄。票數一般按單位在樓宇總值的百分比或千分比計算。',p:['不是一個單位一票，也不是一名業主一票。','會議錄是證明決議及追討部分共同負擔的重要文件。']},
+      {t:'3.3 大會權限',d:'大會可通過預算和帳目、管理規章、共同部分工程、保險及選任管理機關等。',p:['不同事項所需票數不同，不能把一般決議門檻套用於全部事項。']},
+      {t:'3.4 決議爭議',d:'違反公共秩序、善良風俗或保護公共利益規定的決議可能無效；程序或召集問題多涉及可撤銷。',p:['要分清誰有正當性提出、提出期限，以及向法院爭議。']},
+      {t:'4. 管理機關',d:'管理機關成員由大會選出，依法執行共同部分管理、財務和大會決議。',p:['成員數目、任期、續任及報酬按法律、大會決議及規章處理。','管理機關行為損害利益時，可向所有人大會申訴。']},
+      {t:'5. 管理機關與管理公司',d:'管理機關是法定的樓宇執行機關；管理公司是按合同提供服務的商業實體。',p:['聘請管理公司不會把所有人大會及管理機關的法定權限全部轉移。']},
+      {t:'6. 管理規章',d:'規章規範共同部分使用、管理秩序、費用和違規後果，對所有人及合法占用人具約束力。',p:['規章不得違反法律強制規定。','制定、通過及修改屬所有人大會的決議事項。']},
+      {t:'7. 共同儲備基金',d:'共同儲備基金屬必須設立，用於共同部分保存、修補及非預見必要開支。',p:['供款、管理方式與可支付項目由法律及大會決議共同規範。']},
+      {t:'8–9. 更新工程、必要及急需工程',d:'更新工程改變共同部分外觀、結構或用途；必要及急需工程則為防止損害或危險而不能延誤。',p:['不同工程所需大會許可及票數不同。','緊急情況可先採取必要措施，但要保留原因、報價、照片與開支證明。']},
+      {t:'10. 經濟房屋管理',d:'經濟房屋在首次所有人大會執行決議前，管理安排受特別制度規範。',p:['第41/95/M號法令相關題目常考房屋局監察、費用核准及發展商／獲批地企業角色。']}
+    ]},
+    {title:'第四章　買賣與租賃',intro:'由預約買賣到正式公證，再到租約履行與終止，掌握整個交易生命週期。',cat:'買賣租賃',units:[
+      {t:'1.1 不動產預約買賣',d:'雙方先承諾將來訂立正式買賣。教材重點包括私文書形式、定金、違約及特定執行。',p:['預約合同不是正式移轉所有權。','特定執行是以法院判決取代違約方訂立正式合同的意思表示。']},
+      {t:'1.2 三方約',d:'買方、賣方與貸款銀行可透過具買賣及抵押預約的消費借貸安排交易與貸款。',p:['分清買賣價款、貸款、抵押設定及各方付款條件。']},
+      {t:'1.3 正式買賣合同',d:'不動產買賣須採法定正式方式，教材題庫以公證書為核心。完成後仍要辦理稅務與物業登記。',p:['簽預約合同及交付定金，不會自動令買方成為登記業主。']},
+      {t:'1.4 共有不動產出售',d:'按份共有人的份額可依法處分，但共同共有財產通常要全體共同處理。',p:['出售整項物業與出售個別份額的要求不同。','其他共有人可能享有法定優先權。']},
+      {t:'1.5 優先權',d:'法定或約定優先權讓特定人士在相同條件下優先買入。',p:['賣方要通知出賣計劃與合同主要條款。','優先權人須在法定期間內行使。']},
+      {t:'1.6 不動產買賣授權',d:'委託他人買賣不動產要有相應形式及明確權力。',p:['檢查是否容許雙方代理、自我交易、收取價款及再授權。']},
+      {t:'1.7 經濟房屋交易',d:'經屋買賣受自住、不可轉讓、補價及買方資格等特別限制。',p:['不能把私人樓宇的自由買賣規則直接套用。']},
+      {t:'2.1 樓花法律制度',d:'樓花是承諾轉讓在建樓宇。交易受預先許可、登記、合同內容、付款比例及律師聲明等規管。',p:['未獲預先許可或未完成必要登記時，公證與交易程序可受限制。']},
+      {t:'2.2 樓花買賣程序',d:'一般流程包括核對發展項目、簽預約合同、認定簽名、登記取得、付款及完工後正式轉讓。',p:['合同地位再轉讓亦可能要依法作出合同及登記。']},
+      {t:'2.3 樓花須知',d:'買方應核對發展商、地段、圖則、用途、面積、交樓標準、付款、完工期限與違約條款。',p:['廣告或示範單位不取代合同及核准圖則。']},
+      {t:'3.1–3.2 租賃形式與出租人義務',d:'租賃應依法定形式訂立。出租人要交付租賃物，確保承租人按合同使用及收益。',p:['題庫對不動產租賃書面及簽名認定有特定答案，應按附件版本記憶。']},
+      {t:'3.3–3.5 承租人義務、期間與租金',d:'承租人要付租、善用物業、按用途使用、容許必要檢查及於終止時返還。',p:['分清租期上限、沒有訂明期間的處理、預付租金及按金。','逾期交租、加租通知及法定賠償是常考位。']},
+      {t:'3.6 合同地位移轉與轉租',d:'讓與租賃地位及轉租不是同一件事；是否要出租人同意或通知，視情況及商業企業制度而定。',p:['商業企業轉讓可能連同營業場所租賃地位，但仍要履行通知。']},
+      {t:'3.7–3.9 終止、承租人死亡及商業企業租賃',d:'租賃可因失效、解除、單方終止、單方廢止或協議終止。承租人死亡及商業企業租賃有特別承接規則。',p:['違約解除通常要依法定程序進行。','不要混淆出租人單方終止與承租人單方廢止。']}
+    ]},
+    {title:'第五章　稅、公證及登記',intro:'交易能否完成，不只看合同；還要處理稅款、公證形式、登記公示及客戶識別。',cat:'登記、公證、稅務',units:[
+      {t:'1.1 房屋稅',d:'房屋稅以都市房屋收益為核心，教材涵蓋出租及非出租房屋、免稅、收益申報、扣除與繳納。',p:['留意申報月份、繳稅期限、逾期附加及強制徵收。','新建樓宇免稅期按教材所在地分類記憶。']},
+      {t:'1.2 印花稅',d:'特定文書、合同、證明及交易要繳印花稅。',p:['租約、證明書及不動產移轉適用不同項目與稅率。','不要把一般印花稅與財產移轉印花稅混淆。']},
+      {t:'1.3 財產移轉印花稅豁免',d:'法律為特定主體或交易設定豁免，但須逐項核對資格、標的及程序。',p:['有豁免不代表毋須申報或提供證明。']},
+      {t:'1.4 特別印花稅',d:'教材介紹短期內移轉不動產可能適用的特別印花稅，目的是增加短期轉售成本。',p:['考題通常以取得至再轉讓的期間及稅率作判斷。']},
+      {t:'1.5 非首個居住用途不動產印花稅',d:'教材版本另介紹取得非首個居住用途不動產的附加印花稅安排。',p:['這類政策性稅項較容易修訂，實務須核對最新法律。']},
+      {t:'1.6–1.7 營業稅與所得補充稅',d:'從事房產代理等商業活動涉及營業稅登記；經營所得亦可能納入所得補充稅。',p:['分清開業申報、行業分類、定額營業稅及 A／B 組所得申報期。']},
+      {t:'2. 公證',d:'公證為法律行為、文書及簽名提供法定形式與公信力。',p:['公證員可繕立公證書、認證文書、認定簽名及發出證明。','公證員須核對身份、能力、代表權、合法性及所需稅務文件。']},
+      {t:'3. 物業登記',d:'物業登記向公眾展示不動產的權利、負擔與法律狀況。',p:['查屋紙可載業主、抵押、查封或訴訟等資料。','分清確定登記、臨時登記、拒絕與登記不存在。','登記通常由有正當性人士提出，並要有合資格憑證。']},
+      {t:'4. 預防清洗黑錢',d:'中介須識別客戶、受益人、交易利害關係人及不動產，持續留意不尋常或可疑交易。',p:['建立業務關係、懷疑洗錢或身份資料存疑時要識別。','保存識別及交易文件，並按制度履行舉報、保密與內部控制。']}
+    ]},
+    {title:'第六章　房地產中介業務法',intro:'掌握中介人與經紀的角色、准照、合同、佣金、披露責任、監察與處罰。',cat:'房地產中介業務法',units:[
+      {t:'1. 概念',d:'房地產中介業務是以有償方式促成他人訂立涉及不動產的法律行為；中介人與經紀是不同法律角色。',p:['中介人是經營業務的主體；經紀是以准照從事具體中介工作的自然人。']},
+      {t:'2.1 中介人准照',d:'申請人須符合從業要件、具商業營業場所及其他法定條件；准照有有效期並須續期。',p:['法人中介人還要留意公司所營事業、機關成員及適當資格。']},
+      {t:'2.2 經紀准照',d:'房地產經紀必須為自然人，符合資格並通過所需知識測試。',p:['原則上同一時期只可為一名中介人提供服務。','提供服務時要攜帶或出示工作證明。']},
+      {t:'2.3–2.5 中止、註銷與欠缺准照',d:'准照可依申請或法定原因中止、註銷；無准照從業會招致處罰。',p:['中止及註銷不會自動消滅既有責任。','續期、中止或資料變更有不同通知期限。']},
+      {t:'3. 商業營業場所',d:'中介業務須在符合法定用途及識別要求的營業場所經營。',p:['分行或其他服務地點亦須按制度申報和展示資料。']},
+      {t:'4.1 權利及佣金',d:'中介人有權按合同取得報酬及費用，但何時可收佣取決於是否促成合同所指法律行為及合同約定。',p:['僅簽署中介合同通常不等於立即取得佣金。']},
+      {t:'4.2 對客戶的義務',d:'要核實客戶的能力和正當性、物業特徵與負擔，並清楚客觀告知價格、付款及影響交易的事實。',p:['知道利益衝突、責任或負擔時，不能隱瞞。','廣告及口頭說法必須與可核實資料一致。']},
+      {t:'4.3 其他義務',d:'包括訂立書面中介合同、保存檔案、保密、合作、提供資料及接受監察。',p:['題庫版本要求中介合同保存五年。','拒絕有權限人員依法監察可產生嚴重後果。']},
+      {t:'5. 房地產經紀義務',d:'經紀要在所屬中介人範圍內工作，遵守指示、保密及客戶轉介限制。',p:['不得私下把客戶轉介予其他中介人而欠缺所需同意。']},
+      {t:'6–7. 監察與罰則',d:'主管實體可進入營業場所、查閱文件及要求合作。違法可被罰款、關閉場所或禁止業務。',p:['中介人可能對所屬經紀行為負連帶責任。','累犯可加重處罰；處罰須經行政程序並保障申辯。']}
+    ]},
+    {title:'第七章　非法旅館',intro:'識別甚麼是非法提供住宿、誰負責監察，以及提供或招攬入住可能承擔的責任。',cat:null,units:[
+      {t:'1–2. 概念與定義',d:'在不具合法旅館業條件及准照的樓宇或單位，以有償方式向公眾提供短期住宿，可能構成非法提供住宿。',p:['判斷會看實際運作、入住對象、期間、收費及招攬方式，不只看合同名稱。']},
+      {t:'3. 監察',d:'主管機關可依法調查場所、收集資料及採取臨時措施。',p:['業主、占用人、經營者及協助招攬者的角色要分開判斷。']},
+      {t:'4.1 提供非法住宿的處罰',d:'非法提供住宿者可被罰款，場所亦可能被封閉或採取其他法定措施。',p:['實際控制和經營住宿活動的人是責任判斷重點。']},
+      {t:'4.2–4.3 招攬與處罰程序',d:'為非法住宿招攬客人亦可被處罰；處罰須依行政程序調查、通知及作出決定。',p:['網上宣傳、代收款或帶客入住都可能成為證據。']}
+    ]},
+    {title:'附錄　法律依據與使用方法',intro:'把教材當作考試與實務入門，而不是取代最新法例及專業法律意見。',cat:null,units:[
+      {t:'1. 法律依據',d:'教材涵蓋《民法典》、《商法典》、土地、樓花、物業管理、經濟房屋、中介業務、稅務、公證、登記、清洗黑錢及非法住宿等法規。',p:['同一交易往往同時受多部法律規範。','法律修訂後，應以最新《澳門特別行政區公報》文本為準。']},
+      {t:'2. 參考資料與答題方法',d:'先掌握概念，再背期限、金額及主管部門。情境題應按人物、財產、合同、程序及例外逐步拆解。',p:['看到「必然、任何情況、只可」要警覺是否過度絕對。','最後以題庫答案校準考試口徑，但不要把舊題庫當作最新法律意見。']}
+    ]}
+  ];
+
+  const QUESTIONS = [
+    {c:'主體',n:1,q:'法律主體必然具有哪些能力？',o:['權利能力','行為能力','訴訟能力','以上皆是'],a:0},
+    {c:'主體',n:2,q:'根據澳門《民法典》規定，自然人何時開始具有權利能力？',o:['胎兒','完全出生且有生命時','年滿14歲','年滿18歲'],a:1},
+    {c:'主體',n:3,q:'下列哪一種情況導致自然人權利能力終止？',o:['死亡','失蹤滿七年','年滿65歲','被醫學診斷為神志不清'],a:0},
+    {c:'主體',n:4,q:'因精神失常、聾啞或失明而顯示無能力處理本人人身及財產事務之人，得在法律上宣告為甚麼？',o:['準禁治產','禁治產','被保佐人','未成年人'],a:1},
+    {c:'主體',n:5,q:'因慣性揮霍、濫用酒精飲料或麻醉品而顯示無能力適當處理其財產之人，法律上得宣告為甚麼？',o:['準禁治產','禁治產','被保佐人','未成年人'],a:0},
+    {c:'主體',n:6,q:'澳門《民法典》規定的未成年人是指甚麼人？',o:['未滿14歲的人','未滿16歲的人','未滿17歲的人','未滿18歲的人'],a:3},
+    {c:'主體',n:7,q:'澳門《民法典》規定的未成年人得結婚的年齡是？',o:['年滿14歲','年滿15歲','年滿16歲','年滿17歲'],a:2},
+    {c:'主體',n:8,q:'未成年人在以下哪一情況可以進行買賣法律行為？',o:['以具親權的父母代理','由公證員許可','由物業登記局許可','以上皆不對'],a:0},
+    {c:'買賣租賃',n:1,q:'以下哪項為題庫所述訂立不動產租賃合同應採用的法定方式？',o:['私文書','經公證認定的私文書','經認證文書','公文書'],a:1},
+    {c:'買賣租賃',n:2,q:'根據題庫《民法典》部分，租金的預付不得超過多少期租金？',o:['一期租金','二期租金','六期租金','十二期租金'],a:0},
+    {c:'買賣租賃',n:4,q:'根據題庫《民法典》部分，租賃合同的最長期間不得超過多少年？',o:['十年','二十年','三十年','四十年'],a:2},
+    {c:'買賣租賃',n:8,q:'出租人因承租人拖欠商舖租金數月而提起勒遷之訴並請求解除合同。承租人想令有關訴訟權利失效，應採取哪種方式？',o:['支付全數欠租','支付全數欠租及法定利息','支付法定損害賠償','支付全數欠租及法定損害賠償'],a:3},
+    {c:'買賣租賃',n:38,q:'不動產租賃中，出租人的單方終止須以何種方式作出？',o:['口頭通知','書面通知','以上各種均可','無須通知，租期屆滿即自動失效'],a:1},
+    {c:'買賣租賃',n:40,q:'不動產預約買賣合同之訂立方式為以下哪一方式？',o:['口頭','電子郵件','私文書','以上皆是'],a:2},
+    {c:'買賣租賃',n:44,q:'在不動產預約買賣合同不被履行的情況下，「特定執行」是指甚麼？',o:['透過法院查封買賣標的物業','透過法院迫令預約出賣方簽立買賣公證書','透過法院迫令預約買受方接收物業','透過法院判決取代不履行一方作出訂立買賣公證書的意思表示'],a:3},
+    {c:'買賣租賃',n:45,q:'不動產的買賣合同，須以下列哪一方式訂立方為有效？',o:['公證書','經認證文書','經認定簽署的文書','私文書'],a:0},
+    {c:'登記、公證、稅務',n:5,q:'下列哪項為題庫所載新建樓宇供居住及商業用途的正確免稅期？',o:['澳門4年／氹仔、路環6年','澳門6年／氹仔、路環6年','澳門4年／氹仔、路環4年','澳門6年／氹仔、路環4年'],a:0},
+    {c:'登記、公證、稅務',n:6,q:'根據題庫所引市區房屋稅章程，扣除房屋收益的開支需於何時申報？',o:['1月份','4月份','7月份','10月份'],a:0},
+    {c:'登記、公證、稅務',n:9,q:'如自願納稅期限屆滿後逾60日，納稅人仍不繳納房屋稅，題庫所列法定後果是甚麼？',o:['加徵遲延利息','加繳3%的稅款','強制徵收','以上皆是'],a:3},
+    {c:'登記、公證、稅務',n:16,q:'根據題庫所引《印花稅繳稅總表》，原則上證明書每一版的印花稅是多少？',o:['澳門幣5元','澳門幣10元','澳門幣15元','澳門幣20元'],a:0},
+    {c:'登記、公證、稅務',n:48,q:'根據題庫所引預防清洗黑錢指引，從事不動產中介業務的實體履行相關義務時，受哪個政府部門監察？',o:['財政局','澳門金融管理局','經濟局','法務局'],a:2},
+    {c:'登記、公證、稅務',n:49,q:'根據題庫所引預防清洗黑錢指引，在哪些情況下須對合同訂立人、利害關係人和不動產作識別？',o:['建立業務關係時','懷疑或知悉有清洗黑錢或資助恐怖主義跡象時','對之前身份資料的真實性及適當性存疑時','以上皆是'],a:3},
+    {c:'登記、公證、稅務',n:50,q:'題庫要求從事不動產中介業務的實體，把交易識別文件由交易活動進行日起至少保存多少年？',o:['3年','5年','10年','15年'],a:1},
+    {c:'登記、公證、稅務',n:60,q:'以下哪項為物業登記書面報告（查屋紙）上會載有的資料？',o:['物業的業主姓名','銀行抵押資料','涉及訴訟的資料','以上皆是'],a:3},
+    {c:'不動產',n:39,q:'以下哪項是使批給土地由臨時批給轉為確定批給的情況？',o:['簽署批給合同','支付頭三年的地租','取決於承批人的申請','土地的利用獲法定證明後'],a:3},
+    {c:'不動產',n:43,q:'以下哪項可能導致不許可批出土地程序當事人（承批人）的替換或轉移？',o:['與程序或批給相關的款項尚未繳清','工程不按核准計劃進行','不遵守土地利用期間','以上皆是'],a:3},
+    {c:'不動產',n:45,q:'以下哪項有關批給土地的事宜須在物業登記局作出登記？',o:['移轉批給所衍生的權利','臨時及確定批給與確定批給續期','因修改標的、用途或利用而導致的批給修改','以上皆是'],a:3},
+    {c:'不動產',n:48,q:'根據題庫所引《都市房地產的使用規範》，以下哪項不屬於都市房地產的一般用途？',o:['住宅或居住','工業、商業','軍事、國防','社會、集體或公共設備用途'],a:2},
+    {c:'不動產',n:53,q:'分層建築物中哪一部分可以透過簽訂買賣公證書出售？',o:['獨立單位部分','公共部分','獨立單位及公共部分','以上皆不可'],a:0},
+    {c:'不動產',n:61,q:'根據《民法典》的規定，一切用作物之保存或改善之費用，視為哪種費用？',o:['保存費用','維修費用','改善費用','保養費用'],a:2},
+    {c:'不動產',n:62,q:'根據題庫《民法典》部分，改善費用分為哪三類？',o:['必要、簡單、結構改善費用','基本、有益、結構改善費用','基本、結構、奢侈改善費用','必要、有益、奢侈改善費用'],a:3},
+    {c:'房地產中介業務法',n:4,q:'根據第16/2012號法律，在沒有例外的情況下，同一時期內房地產經紀可為多少名房地產中介人提供服務？',o:['1名','2名','3名','4名'],a:0},
+    {c:'房地產中介業務法',n:5,q:'根據題庫第16/2012號法律部分，房地產中介人准照的有效期為多少年？',o:['1年','2年','3年','4年'],a:2},
+    {c:'房地產中介業務法',n:6,q:'應房地產中介人提出中止准照申請，中止期在准照有效期內連續或間斷不得超過多少個月？',o:['48個月','36個月','24個月','12個月'],a:3},
+    {c:'房地產中介業務法',n:7,q:'應房地產經紀提出中止准照申請，中止期間連續或間斷不得超過多少個月？',o:['12個月','18個月','24個月','36個月'],a:0},
+    {c:'房地產中介業務法',n:8,q:'在沒有另行訂明的情況下，房地產中介人何時有權收取佣金？',o:['簽訂中介合同後','按中介合同促成客戶訂立相關法律行為後','向客戶發出書面通知時','向客戶作出口頭通知時'],a:1},
+    {c:'房地產中介業務法',n:9,q:'根據第16/2012號法律，房地產中介合同須以何種方式訂立？',o:['書面','口頭','書面或口頭皆可','必須為公證書'],a:0},
+    {c:'房地產中介業務法',n:10,q:'如沒有訂明房地產中介合同的有效期，題庫指該有效期視為多少個月？',o:['24個月','18個月','12個月','6個月'],a:3},
+    {c:'房地產中介業務法',n:11,q:'房地產中介人應將已訂立的房地產中介合同存檔及保存多少年？',o:['1年','3年','5年','10年'],a:2},
+    {c:'物業管理',n:3,q:'在簡單管理制度下，分層建築物的決議機關及執行機關分別稱為甚麼？',o:['所有人大會、管理機關','所有人大會、監察機關','管理機關、監察機關','所有人大會、大會主席'],a:0},
+    {c:'物業管理',n:5,q:'根據題庫所引管理法律制度，分層建築物共同儲備基金的設立屬甚麼性質？',o:['任意','必須','臨時','法律沒有規定'],a:1},
+    {c:'物業管理',n:21,q:'下列哪項屬分層建築物所有人大會的無效決議？',o:['違反公共秩序、善良風俗或旨在保護公共利益法律規定的決議','未經所需票數通過的決議','在未經召集的大會上通過的決議','以上皆是'],a:3},
+    {c:'物業管理',n:38,q:'在綜合管理制度下，分層建築物的聯合管理機關由甚麼組成？',o:['整體所有人大會及整體管理機關','整體所有人大會及子部分管理機關','子部分所有人大會及子部分管理機關','各子部分管理機關'],a:3},
+    {c:'物業管理',n:42,q:'根據題庫所引第41/95/M號法令，哪個部門負責監察相關分層建築物之管理？',o:['物業登記局','房屋局','土地工務運輸局','檢察院'],a:1},
+    {c:'物業管理',n:48,q:'甲將物業出售給乙時尚欠管理公司五萬元管理費，題庫答案指應由誰支付？',o:['由甲支付','由乙支付','由甲乙連帶支付','由甲乙共同支付'],a:0},
+    {c:'經濟房屋法',n:1,q:'根據題庫所引第10/2011號法律，經濟房屋對私人房屋市場及社會房屋政策起甚麼作用？',o:['指導性','決策性','補充性','平衡性'],a:2},
+    {c:'經濟房屋法',n:2,q:'根據題庫所引第10/2011號法律，經濟房屋單位的用途是甚麼？',o:['自住','出租','商業活動','公益活動'],a:0},
+    {c:'經濟房屋法',n:3,q:'根據題庫所引第10/2011號法律，經濟房屋樓宇的建造由誰負責？',o:['房屋局','承建商','土地工務運輸局','澳門特別行政區政府'],a:3},
+    {c:'經濟房屋法',n:4,q:'以下哪項是題庫所列的經濟房屋單位類型？',o:['一房一廳（T1）','兩房一廳（T2）','三房一廳（T3）','以上皆是'],a:3},
+    {c:'經濟房屋法',n:6,q:'根據題庫所引第10/2011號法律，以下哪項是申請經濟房屋的一般要件？',o:['性別限制','學歷限制','收入及資產限額','以上皆是'],a:2}
+  ];
+  let order=[],answers=[],current=0,seconds=2700,tick=null,submitted=false;
+  let chapterIndex=0,originalChapterIndex=0,pList=[],pIndex=0,pCorrect=0,pLocked=false,pTopic='';
+  const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+  const STORE='macau-real-estate-study-v2';
+  function loadProgress(){try{return JSON.parse(localStorage.getItem(STORE))||{units:[],topics:{},mockBest:null,mockAttempts:0}}catch(e){return{units:[],topics:{},mockBest:null,mockAttempts:0}}}
+  function saveProgress(p){localStorage.setItem(STORE,JSON.stringify(p));updateDashboard()}
+  function switchView(id){$$('.view').forEach(v=>v.classList.toggle('active',v.id===id));$$('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===id));if(id==='course')renderCourse();if(id==='original')renderOriginal($('#originalSearch')?.value||'');if(id==='practice')renderPracticeHome();if(id==='study')updateDashboard();window.scrollTo({top:0,behavior:'smooth'});}
+  $$('.nav button').forEach(b=>b.onclick=()=>switchView(b.dataset.view));
+  $$('[data-go]').forEach(b=>b.onclick=()=>switchView(b.dataset.go));
+
+  function mastery(rate){return rate>=80?{label:'掌握良好',cls:'strong'}:rate>=60?{label:'基本掌握',cls:'basic'}:{label:'需要重溫',cls:'weak'}}
+  function updateDashboard(){const p=loadProgress(),total=COURSE.reduce((n,c)=>n+c.units.length,0),done=p.units.length,topicCount=Object.keys(p.topics).length,mockDone=p.mockAttempts>0?1:0,overall=Math.round((done/total)*60+(topicCount/7)*30+mockDone*10);$('#lessonDone').textContent=`${done} / ${total}`;$('#topicDone').textContent=`${topicCount} / 7`;$('#bestMock').textContent=p.mockBest===null?'—':`${p.mockBest}分`;$('#overallPercent').textContent=`${overall}%`;$('#overallBar').style.width=`${overall}%`;$('#nextAdvice').textContent=done<total?'繼續完成未讀學習單元。':topicCount<7?'教材已讀完，請完成七個主題測驗。':!mockDone?'主題測驗已完成，可以進入正式模擬。':'繼續重做弱項與正式模擬，穩定達到合格。';const cats=[...new Set(QUESTIONS.map(x=>x.c))];$('#dashboardTopics').innerHTML=cats.map(c=>{const r=p.topics[c];const m=r?mastery(r.best):null;return `<div class="status-row"><span>${c}</span><span class="status-tag ${m?m.cls:''}">${r?`${m.label} · 最佳 ${r.best}%`:'未測驗'}</span></div>`}).join('')}
+
+  function renderCourse(filter=''){const p=loadProgress(),term=filter.trim().toLowerCase();$('#courseNav').innerHTML=COURSE.map((c,i)=>({c,i})).filter(({c})=>!term||`${c.title} ${c.intro} ${c.units.map(u=>u.t+' '+u.d+' '+u.p.join(' ')).join(' ')}`.toLowerCase().includes(term)).map(({c,i})=>`<button class="${i===chapterIndex?'active':''}" data-chapter="${i}"><strong>${c.title}</strong><small>${c.units.length} 個單元</small></button>`).join('');$$('[data-chapter]').forEach(b=>b.onclick=()=>{chapterIndex=Number(b.dataset.chapter);renderCourse($('#courseSearch').value)});const c=COURSE[chapterIndex],done=c.units.filter((u,i)=>p.units.includes(`${chapterIndex}-${i}`)).length;$('#lessonPanel').innerHTML=`<article class="lesson-card"><div class="lesson-top"><div><p class="eyebrow">${c.cat?`對應題庫：${c.cat}`:'教材補充範圍'}</p><h1>${c.title}</h1><p class="chapter-intro">${c.intro}</p></div><div class="chapter-progress">已完成<br><strong>${done} / ${c.units.length}</strong></div></div><div class="unit-list">${c.units.map((u,i)=>{const id=`${chapterIndex}-${i}`,checked=p.units.includes(id);return `<section class="unit"><h3>${u.t}</h3><p>${u.d}</p><ul>${u.p.map(x=>`<li>${x}</li>`).join('')}</ul><label class="unit-check"><input type="checkbox" data-unit="${id}" ${checked?'checked':''}> 我已讀完及理解本單元</label></section>`}).join('')}</div><div class="lesson-nav"><button class="secondary" id="chapterPrev" ${chapterIndex===0?'disabled':''}>上一章</button><button class="secondary" id="readOriginal">閱讀本章原文</button>${c.cat?`<button class="primary" data-practice="${c.cat}">做本章對應題目</button>`:''}<button class="secondary" id="chapterNext" ${chapterIndex===COURSE.length-1?'disabled':''}>下一章</button></div></article>`;$$('[data-unit]').forEach(box=>box.onchange=()=>{const x=loadProgress();x.units=box.checked?[...new Set([...x.units,box.dataset.unit])]:x.units.filter(v=>v!==box.dataset.unit);saveProgress(x);renderCourse($('#courseSearch').value)});$('#chapterPrev').onclick=()=>{if(chapterIndex>0){chapterIndex--;renderCourse($('#courseSearch').value);window.scrollTo({top:0,behavior:'smooth'})}};$('#chapterNext').onclick=()=>{if(chapterIndex<COURSE.length-1){chapterIndex++;renderCourse($('#courseSearch').value);window.scrollTo({top:0,behavior:'smooth'})}};$('#readOriginal').onclick=()=>{originalChapterIndex=chapterIndex;$('#originalSearch').value='';switchView('original')};$$('[data-practice]').forEach(b=>b.onclick=()=>{switchView('practice');startPractice(b.dataset.practice)})}
+  $('#courseSearch').addEventListener('input',e=>renderCourse(e.target.value));
+
+  function escapeHTML(value){return String(value).replace(/[&<>"']/g,ch=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]))}
+  function renderOriginal(search=''){
+    const chapters=window.ORIGINAL_TEXT||[],c=chapters[originalChapterIndex];
+    if(!c){$('#originalArticle').innerHTML='<p>未能載入教材原文。</p>';return}
+    const term=search.trim(),termLower=term.toLocaleLowerCase(),headingSet=new Set(c.headings||[]);
+    const renderText=value=>{const safe=escapeHTML(value);if(!term)return safe;const escapedTerm=escapeHTML(term),pattern=escapedTerm.replace(/[.*+?^${}()|[\]\\]/g,'\\$&');return safe.replace(new RegExp(pattern,'giu'),match=>`<mark>${match}</mark>`)};
+    const blocks=c.text.split(/\n\s*\n/).map(x=>x.trim()).filter(Boolean);
+    let headingNo=0,matchCount=0;
+    const body=blocks.map(block=>{
+      const isHeading=headingSet.has(block)&&!/[；。:]$/.test(block)&&block.length<60;
+      if(isHeading){const id=`original-heading-${headingNo++}`;return `<h2 id="${id}">${renderText(block)}</h2>`}
+      if(termLower)matchCount+=(block.toLocaleLowerCase().split(termLower).length-1);
+      return `<p>${renderText(block).replace(/\n/g,'<br>')}</p>`;
+    }).join('');
+    const toc=(c.headings||[]).filter(h=>!/[；。:]$/.test(h)&&h.length<60);
+    $('#originalChapterNav').innerHTML=chapters.map((item,i)=>`<button class="${i===originalChapterIndex?'active':''}" data-original-chapter="${i}"><strong>${escapeHTML(item.title)}</strong></button>`).join('');
+    $('#originalToc').innerHTML=`<strong>本章目錄</strong>${toc.map((h,i)=>`<a href="#original-heading-${i}">${escapeHTML(h)}</a>`).join('')}`;
+    $('#originalArticle').innerHTML=`<p class="eyebrow">完整教材原文</p><h1>${escapeHTML(c.title)}</h1><div class="reader-tools"><span>${term?`找到約 ${matchCount} 處「${escapeHTML(term)}」`:`約 ${c.text.length.toLocaleString()} 個文字`}</span></div><div class="original-text">${body}</div><p class="reader-source">來源：《澳門房地產經紀技能的基本法律知識》（附件版本）。本頁只調整 PDF 換行、移除頁碼及重複頁首；內容沒有摘要或改寫。法規資料可能其後更新，實務使用時請核對最新官方公布。</p>`;
+    $$('[data-original-chapter]').forEach(b=>b.onclick=()=>{originalChapterIndex=Number(b.dataset.originalChapter);$('#originalSearch').value='';renderOriginal();window.scrollTo({top:0,behavior:'smooth'})});
+  }
+  $('#originalSearch').addEventListener('input',e=>renderOriginal(e.target.value));
+
+  function renderPracticeHome(){const cats=[...new Set(QUESTIONS.map(x=>x.c))],p=loadProgress();$('#practiceHome').classList.remove('hidden');$('#practiceStage').classList.add('hidden');$('#practicePicker').innerHTML=cats.map(c=>{const count=QUESTIONS.filter(x=>x.c===c).length,r=p.topics[c],m=r?mastery(r.best):null;return `<article class="practice-topic"><h3>${c}</h3><p>${count} 題對應題庫練習<br>${r?`最佳：${r.best}% · ${m.label}`:'尚未測驗'}</p><button class="${r?'secondary':'primary'}" data-start-practice="${c}">${r?'再做一次':'開始測驗'}</button></article>`}).join('');$$('[data-start-practice]').forEach(b=>b.onclick=()=>startPractice(b.dataset.startPractice))}
+  function startPractice(cat){pTopic=cat;pList=shuffle(QUESTIONS.filter(x=>x.c===cat));pIndex=0;pCorrect=0;pLocked=false;$('#practiceHome').classList.add('hidden');$('#practiceStage').classList.remove('hidden');renderPracticeQuestion()}
+  function renderPracticeQuestion(){const x=pList[pIndex];$('#practiceStage').innerHTML=`<div class="practice-stage"><div class="question-kicker">${pTopic} · 第 ${pIndex+1} / ${pList.length} 題 · 題庫第 ${x.n} 題</div><h2>${x.q}</h2><div class="choices">${x.o.map((v,i)=>`<button class="choice" data-pchoice="${i}"><span class="letter">${'ABCD'[i]}</span><span>${v}</span></button>`).join('')}</div><div id="practiceFeedback"></div><div class="question-actions"><button class="secondary" id="leavePractice">返回主題</button><button class="primary hidden" id="practiceNext">${pIndex===pList.length-1?'查看結果':'下一題'}</button></div></div>`;$$('[data-pchoice]').forEach(b=>b.onclick=()=>answerPractice(Number(b.dataset.pchoice)));$('#leavePractice').onclick=renderPracticeHome;$('#practiceNext').onclick=()=>{if(pIndex===pList.length-1)finishPractice();else{pIndex++;pLocked=false;renderPracticeQuestion()}}}
+  function answerPractice(choice){if(pLocked)return;pLocked=true;const x=pList[pIndex],ok=choice===x.a;if(ok)pCorrect++;$$('[data-pchoice]').forEach((b,i)=>{b.disabled=true;if(i===x.a)b.classList.add('selected')});$('#practiceFeedback').innerHTML=`<div class="instant-feedback ${ok?'ok':'no'}"><strong>${ok?'答對了':'答錯了'}</strong><br>正確答案：${'ABCD'[x.a]}. ${x.o[x.a]}</div>`;$('#practiceNext').classList.remove('hidden')}
+  function finishPractice(){const rate=Math.round(pCorrect/pList.length*100),m=mastery(rate),p=loadProgress(),old=p.topics[pTopic];p.topics[pTopic]={latest:rate,best:Math.max(rate,old?.best||0),attempts:(old?.attempts||0)+1};saveProgress(p);$('#practiceStage').innerHTML=`<div class="mastery-box"><div class="mastery-score">${rate}%</div><div><p class="eyebrow">${pTopic}</p><h2>${m.label}</h2><p>答對 ${pCorrect} / ${pList.length} 題。${rate>=80?'可以繼續下一個主題。':rate>=60?'已掌握基礎，建議重溫錯題後再試。':'建議返回完整教材重讀本章。'}</p><div class="compact-actions"><button class="primary" id="practiceAgain">再做一次</button><button class="secondary" id="practiceBack">選擇其他主題</button><button class="secondary" id="practiceCourse">返回教材</button></div></div></div>`;$('#practiceAgain').onclick=()=>startPractice(pTopic);$('#practiceBack').onclick=renderPracticeHome;$('#practiceCourse').onclick=()=>switchView('course')}
+  function shuffle(a){const x=[...a];for(let i=x.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[x[i],x[j]]=[x[j],x[i]]}return x}
+  function startExam(){order=shuffle(QUESTIONS);answers=Array(50).fill(null);current=0;seconds=2700;submitted=false;$('#startScreen').classList.add('hidden');$('#resultScreen').classList.add('hidden');$('#examScreen').classList.remove('hidden');renderGrid();renderQuestion();updateTimer();clearInterval(tick);tick=setInterval(()=>{seconds--;updateTimer();if(seconds<=0)finish(true)},1000);switchView('quiz')}
+  function updateTimer(){const m=String(Math.floor(seconds/60)).padStart(2,'0'),s=String(seconds%60).padStart(2,'0');$('#timer').textContent=`${m}:${s}`;$('#timer').classList.toggle('warn',seconds<=300)}
+  function renderQuestion(){const x=order[current];$('#progressText').textContent=`第 ${current+1} / 50 題`;$('#answeredText').textContent=`已答 ${answers.filter(v=>v!==null).length} 題`;$('#questionKicker').textContent=`${x.c} · 題庫第 ${x.n} 題`;$('#questionText').textContent=x.q;$('#choices').innerHTML=x.o.map((v,i)=>`<button class="choice ${answers[current]===i?'selected':''}" data-i="${i}"><span class="letter">${'ABCD'[i]}</span><span>${v}</span></button>`).join('');$$('.choice').forEach(b=>b.onclick=()=>{answers[current]=Number(b.dataset.i);renderQuestion();renderGrid()});$('#prevBtn').disabled=current===0;$('#nextBtn').disabled=current===49;$$('.qdot').forEach((b,i)=>b.classList.toggle('current',i===current))}
+  function renderGrid(){$('#questionGrid').innerHTML=answers.map((v,i)=>`<button class="qdot ${v!==null?'done':''} ${i===current?'current':''}" data-i="${i}">${i+1}</button>`).join('');$$('.qdot').forEach(b=>b.onclick=()=>{current=Number(b.dataset.i);renderQuestion()});$('#answeredText').textContent=`已答 ${answers.filter(v=>v!==null).length} 題`}
+  $('#prevBtn').onclick=()=>{if(current>0){current--;renderQuestion()}};$('#nextBtn').onclick=()=>{if(current<49){current++;renderQuestion()}};$('#clearBtn').onclick=()=>{answers[current]=null;renderQuestion();renderGrid()};
+  function finish(auto=false){if(submitted)return;const missing=answers.filter(v=>v===null).length;if(!auto&&!confirm(missing?`尚有 ${missing} 題未作答，確定交卷？`:'確定交卷？'))return;submitted=true;clearInterval(tick);const correct=order.reduce((n,x,i)=>n+(answers[i]===x.a),0),score=correct*2,pass=correct>=30;const progress=loadProgress();progress.mockBest=Math.max(score,progress.mockBest??0);progress.mockAttempts=(progress.mockAttempts||0)+1;saveProgress(progress);const cats=[...new Set(order.map(x=>x.c))];const rows=cats.map(c=>{const idx=order.map((x,i)=>x.c===c?i:-1).filter(i=>i>=0),ok=idx.filter(i=>answers[i]===order[i].a).length;return {c,ok,total:idx.length}});const wrong=order.map((x,i)=>({x,i})).filter(({x,i})=>answers[i]!==x.a);$('#examScreen').classList.add('hidden');$('#resultScreen').classList.remove('hidden');$('#resultScreen').innerHTML=`<div class="result-wrap"><div class="result-card"><p class="eyebrow">正式規格模擬結果</p><div class="score-ring" style="background:conic-gradient(${pass?'var(--good)':'var(--bad)'} ${score}%,#e7ecf2 0)"><div><span><strong>${score}</strong>分</span></div></div><h2 class="${pass?'pass':'fail'}">${pass?'合格':'未合格'}</h2><p>答對 ${correct} 題，答錯或未答 ${50-correct} 題。${auto?'時間已到，系統自動交卷。':''}</p><button class="primary" id="retryBtn">再做一次</button> <button class="secondary" id="backStudy">返回學習路線</button></div><div class="result-card"><h2>各類表現</h2><div class="breakdown">${rows.map(r=>`<div class="barrow"><span>${r.c}</span><div class="bar"><i style="width:${r.ok/r.total*100}%"></i></div><b>${r.ok}/${r.total}</b></div>`).join('')}</div></div></div><div class="section-title"><h2>錯題重溫</h2><p>${wrong.length?'核對正確答案，再返回相應主題教材及練習。':'全對，做得好。'}</p></div><div class="review-list">${wrong.map(({x,i})=>`<article class="review"><div class="question-kicker">第 ${i+1} 題 · ${x.c} · 題庫第 ${x.n} 題</div><h4>${x.q}</h4><p class="wrong">你的答案：${answers[i]===null?'未作答':`${'ABCD'[answers[i]]}. ${x.o[answers[i]]}`}</p><p class="correct">正確答案：${'ABCD'[x.a]}. ${x.o[x.a]}</p></article>`).join('')}</div>`;$('#retryBtn').onclick=startExam;$('#backStudy').onclick=()=>switchView('study');window.scrollTo({top:0,behavior:'smooth'})}
+  $('#submitBtn').onclick=()=>finish(false);$('#startBtn').onclick=startExam;
+  updateDashboard();renderCourse();renderOriginal();renderPracticeHome();
+  </script>
+</body>
+</html>
